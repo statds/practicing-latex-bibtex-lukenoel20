@@ -20,7 +20,7 @@ diff:
 log:
 	@git log -5 --pretty=format:"%h by %an at %ar: %s" $(source)
 
-.PNONY: clean
+.PHONY: clean
 clean:
 	rm -rf $(out) *~ .*~ .\#* .Rhistory *.aux *.bbl *.blg *.dvi *.out *.log *.toc \
 	*.fff *.fdb_latexmk *.fls *.ttt *diff* *oldtmp* .blb
