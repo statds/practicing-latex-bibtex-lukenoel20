@@ -20,6 +20,7 @@
 The abstract would go here. 
 \end{abstract}
 
+
 \section{Introduction}
 \label{sec:intro}
 Introduction to the paper.
@@ -32,6 +33,7 @@ The results are reported in Section~\ref{sec:resu}.
 The conclusion is discussed in Section~\ref{sec:con}.
 Appendix at the end in Section~\ref{sec:app}.
 
+
 \section{Data}
 \label{sec:data}
 
@@ -40,6 +42,7 @@ Write about the data here.
 In line equation 1: $Z = (X - \mu)/\sigma$
 
 In line equation 2: $y = 2*\pi$
+
 
 \section{Methods}
 \label{sec:meth}
@@ -60,12 +63,13 @@ In display equation 2:
 
 See Equation~\eqref{eq:vol} for volume of a sphere formula.
 
+
 section{Results}
 \label{sec:resu}
 
 Table~\ref{tab:car} shows first 5 rows of mtcars R dataset
 
-\begin{table}[ht]
+\begin{table}[tbp]
   \caption{Table 1 example}
   \label{tab:car}
 \centering
@@ -84,17 +88,28 @@ Mazda RX4 & 21.00 & 6.00 & 160.00 & 110.00 & 3.90 & 2.62 & 16.46 & 0.00 & 1.00 &
 
 Figure~\ref{fig:iris} shows the sepal length vs. sepal width for the popular iris dataset in R.
 
-\begin{figure}[ht]
+\begin{figure}[tbp]
   \centering
   \includegraphics[width=\textwidth]{iris.pdf}
   \caption{Figure 1 example.}
   \label{fig:iris}
 \end{figure}
 
+
 \section{Conclusion}
 \label{sec:con}
 
 Final discussion and wrap up.
+
+Different citation examples:
+
+In text:
+In a paper done by \citet{kleinfootball}, he talks about how 
+data analytics is changing the sport of football.
+
+Parenthetical:
+One finding was that statistical models are greatly helping colleges find new football
+talent and win more games \citep{kleinfootball}.
 
 \section{Appendix}
 \label{sec:app}
@@ -102,3 +117,7 @@ Final discussion and wrap up.
 Place for supplemental material.
 
 
+\bibliography{refs}
+
+
+\end{document}
